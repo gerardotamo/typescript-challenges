@@ -1,1 +1,1 @@
-export type TupleToObject<T extends readonly any[]> = any
+export type TupleToObject<T extends readonly any[]> = {[key in T[number]]:key}
